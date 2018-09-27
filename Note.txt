@@ -25,9 +25,16 @@ Branch strategy
 2. อายุสั้น (1-2 วัน)
 3. Merge บ่อยๆ
 4. ดู Severity ของ Feature/Bug ว่าต้องแก้เลยมั้ย
-5. อาจจะ Merge ที่ละ function ของ feature ของ Master หรือ merge master เข้า Feature
+5. อาจจะ Merge ที่ละ function ของ feature ของ Master หรือ merge master เข้า Feature หรือ merge ทุกอย่างเข้า Master แล้วใช้ Feature toggle
 6. รูปแบบการทำงานขององค์กร มีผลต่อการออกแบบ Branch
 7. คุยภาพรวม
 8. เทส S/W ทุกครั้งก่อนเข้า Master Branch
 
 Merge & Rebase ?
+
+
+
+Step to define root cause of Source code management
+1. Visualize current process
+2. Identify issue of each steps in process
+

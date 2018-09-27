@@ -1,0 +1,33 @@
+*** เริ่มต้นจากปัญหาก่อน จึงไปใช้ Tool***
+
+1. เก็บเฉพาะ Program asset
+2. ไม่เก็บ Library ใน Source control แต่ใช้ package management แทน
+3. gitignore ควรเป็นไฟล์แรก ที่ถูกเขียนขึ้นมา
+4. Binary file (compiled) ไม่ควรเอาขึ้น source control
+5. configuration ของ IDE ไม่ควรเอาขึ้น
+* 6. การเปลี่ยนแปลงแต่ละครั้ง ควรจะเป็นส่วนเล็กๆ  (สะดวก/ง่ายกับ การ Reset / Track History)
+7. HEAD ชื่อแทน Commit ล่าสุด
+8. ก่อน Push ต้อง Pull ก่อน
+9. ก่อน Pull Working directory ต้อง Clean ก่อน
+
+Reset
+- Soft => Default reset => Add state (Not added)
+- mixed => Modified state
+- Hard => Go to previous commit (before modified state)
+
+Source Code
+1. Single source of Truth (Codebase) = Master Branch / Trunk base
+2. พร้อมสำหรับ Ship & Deploy
+
+
+Branch strategy
+1. ขนาดเล็ก 
+2. อายุสั้น (1-2 วัน)
+3. Merge บ่อยๆ
+4. ดู Severity ของ Feature/Bug ว่าต้องแก้เลยมั้ย
+5. อาจจะ Merge ที่ละ function ของ feature ของ Master หรือ merge master เข้า Feature
+6. รูปแบบการทำงานขององค์กร มีผลต่อการออกแบบ Branch
+7. คุยภาพรวม
+8. เทส S/W ทุกครั้งก่อนเข้า Master Branch
+
+Merge & Rebase ?
